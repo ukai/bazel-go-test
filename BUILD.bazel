@@ -15,5 +15,6 @@ go_test(
   data = glob([
     "testdata/*",
   ]),
+  deps = ["@io_bazel_rules_go//go/tools/bazel:go_default_library"],
   embed = [":go_default_library"],
 )
